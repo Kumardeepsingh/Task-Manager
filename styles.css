@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;         /* Set the font for the entire page */
+    display: flex;                          /* Flexbox layout for the page */
+    flex-direction: column;                 /* Stack elements vertically */
+    justify-content: center;                /* Center elements vertically */
+    align-items: center;                    /* Center elements horizontally */
+    background-color: #f4f4f9;            /* Light background color */
+}
+
+.container {
+    background-color: #ffffff;            /* White background for the task container */
+    width: 80%;                             /* Set the width to 80% */
+    margin-bottom: 100px;                   /* Add space below the container */
+    border-radius: 10px;                    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h1, h2 {
+    text-align: center;                     /* Center the headings */
+    color: rgb(5, 5, 5);                  /* Dark text color for headings */
+}
+
+.task {
+    margin-left: 20px;                      /* Add left margin to tasks */
+    border-bottom: 1px solid #ddd;        /* Add a line under each task */
+    padding: 15px 0;                        /* Add space above and below the task */
+}
+
+p, h3 {
+    margin-top: 1px;                        /* Small top margin */
+    margin-bottom: 1px;                     /* Small bottom margin */
+}
+
+.add-task {
+    background-color: rgb(65, 62, 230);     /* Primary blue color for the Add Task button */
+    color: #ffffff;                         /* White text */
+    border: none;                             /* Remove borders */
+    margin-top: 10px;                         /* Top margin */
+    margin-bottom: 10px;                      /* Bottom margin */
+    padding: 10px;                            /* Padding inside the button */
+}
+
+.add-task:hover {
+    background-color: rgb(86, 84, 248);       /* Change background color on hover */
+    cursor: pointer;                            /* Change cursor to pointer on hover */
+}
+
+.task_buttons form {
+    display: inline-block;                      /* Inline-block for buttons */
+    margin-right: 5px;                          /* Add space between buttons */
+    margin-bottom: 10px;                        /* Bottom margin */
+}
+
+#date {
+    color: rgb(98, 97, 97);                   /* Grey color for dates */
+}
+
+#notask {
+    color: rgb(98, 97, 97);                   /* Grey color for no-task messages */
+    text-align: center;                         /* Center the message */
+    padding-bottom: 30px;                       /* Add padding below */
+}
+
+
+.edit {
+    background-color: rgb(242, 226, 7);       /* Yellow background for the Edit button */
+    border: none;                               /* Remove border */
+    border-radius: 5px;                         /* Rounded corners */
+    padding: 5px;                               /* Padding inside the button */
+}
+
+.edit:hover {
+    background-color: rgb(248, 236, 72);      /* Lighter yellow on hover */
+    cursor: pointer;                            /* Pointer cursor on hover */
+}
+
+.completed {
+    background-color: rgb(63, 197, 56);       /* Green background for the Complete button */
+    border: none;                               /* Remove border */
+    color: #ffffff;                           /* White text */
+    border-radius: 5px;                         /* Rounded corners */
+    padding: 5px;                               /* Padding inside the button */
+}
+
+.completed:hover {
+    background-color: rgb(96, 206, 63);       /* Lighter green on hover */
+    cursor: pointer;                            /* Pointer cursor on hover */
+}
+
+.delete {
+    background-color: rgb(242, 7, 7);         /* Red background for the Delete button */
+    border: none;                               /* Remove border */
+    color: #ffffff;                           /* White text */
+    border-radius: 5px;                         /* Rounded corners */
+    padding: 5px;                               /* Padding inside the button */
+}
+
+.delete:hover {
+    background-color: rgb(231, 38, 38);       /* Darker red on hover */
+    cursor: pointer;                            /* Pointer cursor on hover */
+}
+
+.form_container {
+    background-color: #FFFFFF;                /* White background for the form */
+    border-radius: 8px;                         /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 400px;                               /* Set width for the form container */
+    padding: 20px;                              /* Padding inside the container */
+    box-sizing: border-box;                     /* Include padding in element width */
+}
+
+/* Error message styling */
+#error {
+    color: red;                               /* Red color for error messages */
+    text-align: center;                         /* Center the error message */
+}
+
+/* Styling for the form labels */
+label {
+    font-size: 14px;                            /* Smaller font for labels */
+    color: rgb(5, 5, 5);                      /* Dark text color for labels */
+    display: block;                             /* Ensure each label is on its own line */
+    margin-bottom: 8px;                         /* Space below labels */
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="datetime-local"],
+select {
+    width: 100%;                                /* Full width input fields */
+    padding: 10px;                              /* Padding inside input fields */
+    margin: 8px 0;                              /* Vertical margin for spacing */
+    border: 1px solid rgb(187, 187, 189);     /* Light grey border */
+    border-radius: 4px;                         /* Slightly rounded corners */
+    box-sizing: border-box;                     /* Include padding in element width */
+    font-size: 14px;                            /* Set font size */
+}
+
+/* Button styling */
+input[type="submit"] {
+    width: 100%;                                /* Full width submit button */
+    padding: 10px;                              /* Padding inside the button */
+    background-color: #4CAF50;                /* Green background */
+    color: white;                             /* White text */
+    border: none;                               /* Remove border */
+    border-radius: 4px;                         /* Rounded corners */
+    font-size: 16px;                            /* Larger font size */
+    margin: 10px 0;                             /* Vertical margin for spacing */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;                /* Darker green on hover */
+    cursor: pointer;                            /* Pointer cursor on hover */
+}
+
+/* Cancel button style */
+input[type="button"] {
+    color: white;                             /* White text */
+    border: none;                               /* Remove border */
+    border-radius: 4px;                         /* Rounded corners */
+    font-size: 16px;                            /* Larger font size */
+    margin: 10px 0;                             /* Vertical margin for spacing */
+    background-color: #f44336;                /* Red background */
+    padding: 10px;                              /* Padding inside the button */
+}
+
+input[type="button"]:hover {
+    background-color: #d32f2f;                /* Darker red on hover */
+    cursor: pointer;                            /* Pointer cursor on hover */
+}
+
+/* Centering form elements and aligning them properly */
+form {
+    display: flex;                              /* Flexbox layout for form elements */
+    flex-direction: column;                     /* Stack form elements vertically */
+    align-items: flex-start;                    /* Align elements to the left */
+}
+
+/* Styling for select options */
+select {
+    font-size: 14px;                            /* Font size for select dropdown */
+}
+
+/* Margin for the form inputs */
+form input,
+form select {
+    margin-bottom: 12px;                        /* Bottom margin for spacing */
+}
+
+.cancel-container {
+    display: flex;                              /* Flexbox layout for the cancel button */
+    justify-content: center;                    /* Center the cancel button */
+    width: 100%;                                /* Full width for alignment */
+}
